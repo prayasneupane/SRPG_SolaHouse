@@ -1,0 +1,304 @@
+/* responsive for screen lag */
+@media (min-width: 1920px ) {
+    /* .sidebar-left {
+        width: 4%;
+    } */
+    .main-body{
+        width: 96%;
+    }
+}
+/* respnsive for tablet pro */
+@media  (max-width: 1024px ) and (min-width: 767px){
+    /* .sidebar-left {
+        width: 7%;
+    } */
+    .active-sidebar-left {
+        width: 100%;
+    } 
+}
+/* responsive for  tablet */
+@media  (max-width: 768px ) and (min-width: 481px){
+    /* .sidebar-left {
+        width: 10%;
+    } */
+    .active-sidebar-left {
+        width: 100%;
+    }
+    .sidebar-left .icon-social {
+        padding-left: 30%;
+    }
+    .header {
+        background: none;
+        height: auto;
+        backdrop-filter: blur(0px);
+    }
+    .main-body{
+        /* width: 90%; */
+        margin-top: 0 !important;
+    }
+    .home-page  {
+      margin-top: 35% !important;
+      position: relative;
+    }
+
+    /* our_projects page
+    ----------------------------------------------------------- */
+    .page-template-projects-template .list-projects   {
+        margin-top: 40%;
+    }
+    @keyframes list-projects{
+        0%{margin-top: 0;}
+        100%{margin-top: 30%;}
+    }
+
+    .page-template-projects-template .list-projects .item-project .project {
+        width: 40vw !important;
+    }
+
+    .page-template-default-template .project-content .tiles h1 {
+        font-size: 60px;
+    }
+
+    .page-template-default-template .project-content .wp-block-button {
+        width: 60% !important;
+    }
+
+}
+
+
+/* responsive for mobile */
+@media (max-width:  480px){
+    body {
+        /* background-position: -14% 0,0%; */
+    }
+    .img_bg_sidebar {
+        width: 74px;
+    }
+    .main-body {
+        /* padding-left: 5%; */
+        margin-top: 0 !important;
+        transition: 0.4s all;
+        width: calc(100% - 44px);   
+    }
+    .main-body.full-width {
+        width: 100%;
+    } 
+    .sidebar-left {
+        width: 44px;
+    }
+    .active-sidebar-left {
+        width: 100%;
+    }
+
+    .sidebar-left .logo {
+        height: 0;
+    }
+    /* #handle-sidebar {
+        max-width: 44px;
+        margin: 0; 
+    } */
+    .sidebar-left .icon-social {
+        padding-left: 23%;
+    }
+    .sidebar-left .icon-social-extent {
+        padding-right: 40px;
+        margin-bottom: 15% !important;
+    }
+
+    /* .form-sidebar {
+        margin-top: -50px;
+     } */
+
+     /* .form-sidebar input , .form-sidebar textarea{
+        padding: 5px 5px;
+     } */
+    .header {
+        height: auto;
+        background: none;
+        backdrop-filter: blur(0px);
+        margin-left: 20% !important;
+    }
+
+    .logo-extent {
+        padding-left: 12% !important;
+    }
+
+    /* Style for home page */
+    .home #page {
+        display: flex !important;
+    }
+    .home-page{
+        position: relative;
+        margin-left: 0.2rem;
+    }
+
+    .home .main-body  {
+      margin-top:auto !important;
+      margin-bottom: auto;
+      margin-left: auto;
+      padding-left: 0;
+    }
+    .home footer{
+        display: none;
+    }
+
+    .menu-home li:first-child {
+        top: -20vh;
+        left: 18%;
+    }
+
+    .menu-home li:nth-child(2) {
+        top: -10vh;
+        left: 18%;
+    }
+    
+    
+    .menu-home li:nth-child(3)  {
+        top: 110%;
+        left: 18%;
+    }
+    
+    .menu-home li:last-child  {
+        top: 135%;
+        left: 18%;
+    }
+
+    .menu-home li:hover {
+        transform: scale(1);
+    }
+
+    /* our_projects page
+    ----------------------------------------------------------- */
+    .page-template-projects-template .list-projects   {
+        margin-top: 20vh;
+    }
+
+    @keyframes list-projects{
+        0%{margin-top: 0;}
+        100%{margin-top: 20vh;}
+    }
+
+    .page-template-projects-template .list-projects .item-project .project {
+        width: 63vw !important;
+    }
+    .page-template-projects-template .list-projects .item-project .project {
+        height: 350px;
+    }
+    .page-template-projects-template .list-projects .item-project .active {
+        height: 410px;
+        margin-top: -30px;
+    }
+
+    .navigation button {
+        width: 10%;
+    }
+
+    .navigation button.carousel-control-prev {
+        left: 45px;
+    }
+
+    .page-template-projects-template .control {
+        width: 48%;
+        min-width: 48%;
+        max-width: 48%;
+    }
+
+    /* project page */
+    .invidual-projects.navigation-item-projects {
+        bottom: 0%;
+        left: 18%;
+    }
+
+    .navigation-item-projects .control {
+        margin: 0;
+        margin-right: 5px;
+    }
+    .navigation-item-projects .navigation {
+        margin: 0;
+    }
+
+    .page-template-projects-template .navigation-item-projects .control {
+        background: none;
+    }
+
+    .page-template-projects-template .navigation-item-projects .control:active {
+        background: linear-gradient(0deg, rgba(163, 164, 166, 0.24), rgba(163, 164, 166, 0.24)), linear-gradient(0deg, rgba(25, 27, 31, 0.32) 0%, rgba(25, 27, 31, 0.24) 100%);
+    }
+
+    .page-template-default-template .carousel-item img {
+        height: 280px !important;
+    }
+
+    .page-template-default-template .group-navigation {
+        margin-right: 0;
+    }
+    /* post project page
+    ------------------------------------------------------------------ */
+
+    .page-template-default-template  .main-body {
+        padding-left: 0;
+    }
+
+    .page-template-default-template .carousel-indicators {
+        bottom: -30%;
+        left: 18%;
+    }
+
+    .navigation-item-projects{
+        left: 15%;
+        bottom: 3%;
+    }
+
+    .page-template-default-template .project-content {
+        margin-top: 100px;
+    }
+
+    .page-template-default-template .social-medial span {
+        margin-top: -10px;
+    }
+
+    .page-template-default-template .project-content .tiles h1 {
+        font-size: 40px;
+    }
+
+    .story-page .story-post h1.heading {
+        font-size: 31px;
+        line-height: 40px;
+    }
+
+    .page-template-default-template footer {
+        display: flex !important;
+        margin-left: 10%;
+    }
+
+    .page-template-default-template .project-content .wp-block-button a{
+        padding: 11px 0;
+    }
+
+    .page-template-gallery-template .story-post  .content-post img {
+        width: 125% !important;
+        max-width: 125% !important;
+    }
+
+    .page-template-gallery-template .story-post .body-content h1 {
+        font-size: 28px;
+    }
+
+    .page-template-gallery-template .story-post .body-content {
+        transform: translateY(-85px);
+    }
+
+    .logo-brand-heading , .logo-brand-text {
+        text-align: left;
+    }
+    
+    .img-heading-gallery {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+/*     .footer-gallery{
+        margin-bottom: 25vh !important;
+    } */
+
+}
