@@ -1,0 +1,363 @@
+/*
+ Theme Name:   SRPG Theme
+ Theme URI:    https://teamscal.com
+ Description:  SRPG Theme
+ Author:       Teamscal
+ Author URI:   https://teamscal.com
+ Template:     genesis
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  teamscal.com
+*/
+a,
+button,
+input:focus,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+textarea:focus,
+.srpg-theme .featured-content img,
+.button {
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition:    all 0.1s ease-in-out;
+	-ms-transition:     all 0.1s ease-in-out;
+	-o-transition:      all 0.1s ease-in-out;
+	transition:         all 0.1s ease-in-out;
+}
+
+p {
+	margin: 0 0 12;
+	padding: 0;
+}
+
+strong {
+	font-weight: 700;
+}
+
+hr {
+	border: 0;
+	border-collapse: collapse;
+	border-top: 2px solid #f5f5f5; 
+	clear: both;
+	margin: 26px 0;
+}
+
+/* Headings
+--------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Merriweather;
+    font-weight: normal;
+    letter-spacing: 0em;
+}
+h1 {
+	font-size: 40px;
+    line-height: 60px;
+}
+h2 {
+	font-size: 28px;
+    line-height: 45px;
+}
+h3 {
+    font-size: 24px;
+    line-height: 38px;
+}
+h4 {
+    font-size: 20px;
+    line-height: 34px;
+}
+/* h5 {
+    font-size: 40px;
+    line-height: 60px;
+}
+h6 {
+    font-size: 40px;
+    line-height: 60px;
+} */
+
+/* Objects
+--------------------------------------------- */
+
+embed,
+iframe,
+img,
+object,
+video,
+.wp-caption {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+}
+
+a {
+	text-decoration: none;
+	color: #EBEBEB;
+}
+
+a:hover {
+	color: #EBEBEB;
+}
+
+
+.wp-block-button {
+    position: relative;
+    z-index: 10;
+}
+
+.wp-block-button::before {
+    content: '';
+    height: 100%;
+    width: 104%;
+    position: absolute;
+    z-index: -1;
+    top: 11px;
+    right: -2%;
+    border: 1px solid #B2925E;
+    box-sizing: border-box;
+    border-radius: 2px 2px 48px 48px;
+}
+
+
+.wp-block-button__link {
+    background: var(--primary-brand-color);
+    width: 100%;
+    border-radius: 2px 2px 44px 44px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: 600;
+    position: relative;
+    transition: .2s ease-out;
+    background: linear-gradient(to left, #e5bb79 50%, #FFCE80 50%) right;
+    background-size: 200%;
+}
+
+.wp-block-button__link:hover {
+    background-position: left;
+    transform: translateY(5px);
+}
+
+/* custom sola one classes */
+.fixed {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.container-fluid-custom{
+    width: 100%;
+}
+.cb-img{
+    background-size:cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    height:490px;
+}
+.header{
+    margin-left: unset !important;
+    padding-left: 5%;
+}
+
+.cb-content{
+    padding: 20px 30px;
+}
+.srpg-form-container{
+    background: #404040;
+}
+.srpg-form{
+    padding: 100px 56px;
+}
+.srpg-form fieldset{
+    padding: 0 12px !important;
+    border: 1px solid #BFBFBF;
+    margin-bottom: 32px;
+}
+.srpg-form legend{
+    float: unset;
+    width: unset;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 12px !important;
+    padding: 0 8px !important;
+}
+.srpg-form input{
+    width: 100%;
+    background: none;
+    border: none;
+    color:#FFFFFF;
+    outline: none;
+    padding-bottom: 12px;
+}
+.no-padding{
+    padding-left: unset;
+    padding-right: unset;
+}
+#counter-wrapper{
+    /* background: #FFFFFF; */
+    padding-left: 38px;
+    padding-right: 38px;
+    padding-bottom: 38px;
+    padding-top: 18px;
+    color: #E5BB79;
+}
+.sola-one-counter{
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+}
+.counter{
+    flex:20%;
+    padding-top: 20px;
+}
+.counter-number{
+    font-size: 60px;
+    line-height: 122px;
+}
+.entry-video{
+    height: 95vh;
+    width: 100%;
+    background-size:cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url(https://srpgdev.wpengine.com/wp-content/uploads/2023/09/sola_one_entry.jpeg);
+}
+.entry-video-logo{
+    position: absolute;
+    top: calc(25% - 45px);
+    left: calc(50% - 115px);
+    z-index: 2;
+}
+.image-container{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    width: 100%;  
+    background-image: url(https://srpgdev.wpengine.com/wp-content/uploads/2023/12/rawHouse1.jpg);
+    background-size: 100%; 
+    /* background-attachment: fixed; */
+    -webkit-transition: background-image 0.4s ease-in-out;
+    transition: background-image 0.4s ease-in-out;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: center;
+    height: 100vh;
+}
+.image-container-mobile{
+    display: none;
+}
+ section{
+    position: relative;
+    width: 100%;  height: 100vh;
+    display: flex;
+    justify-content: center;  align-items: center;
+}
+
+.image-container.slide1{
+    background-image: url(https://srpgdev.wpengine.com/wp-content/uploads/2023/12/rawHouse1.jpg);
+}
+.image-container.slide2{
+    background-image: url(https://srpgdev.wpengine.com/wp-content/uploads/2023/12/rawHouse2.jpg);
+}
+.image-container.slide3{
+    background-image: url(https://srpgdev.wpengine.com/wp-content/uploads/2023/12/rawHouse3.jpg);
+}
+.image-container.slide4{
+    background-image: url(https://srpgdev.wpengine.com/wp-content/uploads/2023/12/rawHouse4.jpg);
+}
+.image-container.slide5{
+    background-image: url(https://srpgdev.wpengine.com/wp-content/uploads/2023/09/sola_one_home_complete.jpg);
+}
+#screen-detector{
+    display: none;
+}
+.menu-item-469 img{
+    width: 60px;
+}
+@media (max-width: 959px){
+    .cb-container{
+        flex-direction: column !important;
+    }
+    .cb-img{
+        height: 250px;
+    }
+    .cb-content{
+        padding: 20px 10px;
+    }
+    .entry-video-logo{
+        position: absolute;
+        top: calc(30% - 20px);
+        left: calc(50% - 50px);
+        z-index: 2;
+        width: 100px;
+    }
+}
+@media (min-width: 959px){
+    .sola-form{
+        padding: 0px 30px;
+    }
+    .cb-img-left{
+        /* margin-left: calc(-50vw + 92.77777777%); */
+    }
+    .cb-img-right{
+        /* margin-right: calc(-50vw + 91.77777777%); */
+    }
+    
+
+}
+@media (max-width: 1024px){
+    
+    .counter-number{
+        font-size: 42px;
+        line-height: 60px;
+    }
+   
+}
+@media (min-width: 991px) {
+    .home-page{
+        top: calc(50% - 270px)!important;
+    }
+}
+@media (max-width: 767px) {
+    #screen-detector{
+        display: block;
+    }
+    .image-container-mobile{
+        display: block;
+        margin-bottom: 40px;
+    }
+    .counter-number{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .counter{
+        flex: 33%;
+    }
+    .counter:first-child{
+        margin-right: 10px;
+    }
+    .image-scroll-animation{
+        display: none;
+    }
+}
+@media (max-width: 998px) {
+    
+    #counter-wrapper{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .counter h3{
+        font-size: 18px;
+    }
+}
+@media (max-width: 991px) {
+    .cb-container{
+        flex-direction: column !important;
+    }
+}

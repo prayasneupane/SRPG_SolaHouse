@@ -1,0 +1,12 @@
+@-moz-document url-prefix() {
+    .sidebar-left {
+        background: url(https://www.srpropertygroup.com.au/wp-content/uploads/2022/01/image-8.jpg);
+        opacity: 0.8;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed !important;
+    }
+    .active-sidebar-left {
+        opacity: 1;
+    }
+}

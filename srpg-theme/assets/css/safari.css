@@ -1,0 +1,18 @@
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) {
+         /* type your custom css code here */
+        @media (max-width: 480px){
+            .page-template-gallery-template .gallery-post .img-post-gallery img {
+                height: 50%;
+            }
+            .page-template-projects-template .list-projects   {
+                margin-top: 25vh;
+            }
+        
+            @keyframes list-projects{
+                0%{margin-top: 0;}
+                100%{margin-top: 25vh;}
+            }
+        }
+    }
+}
