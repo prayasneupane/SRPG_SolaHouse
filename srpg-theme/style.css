@@ -326,7 +326,7 @@ a:hover {
 }
 @media (max-width: 767px) {
     #screen-detector{
-        display: block;
+        display:  block; 
     }
     .image-container-mobile{
         display: block;
